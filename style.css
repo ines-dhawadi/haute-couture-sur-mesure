@@ -1,9 +1,13 @@
-@media only screen and (min-width: 638px) {
+@media only screen and (min-width: 602px) {
     /*------------------------------------------Acceuil-------------------------------------------------*/
     body {
         padding: 0%;
         margin: 0%;
         width: 100%;
+    }
+    #logo {
+        width: 15%;
+        height: 15%;
     }
     /*-------------------------------------------head--------------------------------*/
     #img1 {
@@ -19,5 +23,18 @@
         font-size: 60px;
         margin-left: 45%;
         margin-top: 15%;
+    }
+    /*-------------------------------------------------A propos---------------------------*/
+    .info1 {
+        font-size: 18px;
+        line-height: 33px;
+        font-family: Arial;
+    }
+    #apropos {
+        margin-top: 100px;
+    }
+    #imgapropos:hover {
+        transition: 2s;
+        transform: scale(1.2);
     }
 }
