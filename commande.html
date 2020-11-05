@@ -16,12 +16,41 @@
 </head>
 
 <body>
-    <h1 class="text-center"> Commande personnalisée</h1>
+    <!--------------------------------------------------Navbar--------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img id="logo" src="image/logo.webp" alt=""></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto  d-flex justify-content-between">
+                <li class="nav-item"><a class="nav-link " href="Acceuil.html">Acceuil</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Produits</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="vetement du quotidien.html">Les vêtements du quotidien </a>
+                        <a class="dropdown-item" href="vetement pour les grandesoccasions.html">Les vêtements pour les grandes occasions</a>
+
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link " href="commande.html">Commande personnalisée</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="panier.html"><img src="image/add-to-cart.png" alt=""> Panier</a>
+                </li>
+                <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-----------------------------------------------------End navbar--------------------------------------->
+    <img style="width: 100%;" id="IMG" src="image/head/img4.jpeg" alt="">
+    <h1 class="text-center mt-5"> Commande personnalisée</h1>
 
 
     <!--------------------------------------------form 2----------------------->
     <br><br>
-    <form style="background-color: lightyellow; width:60%; margin-left: 35%;" class="border border-dark justify-content-center">
+    <form style="background-color: rgb(255, 255, 255); width:60%; margin-left: 35%;" class="border border-dark">
         <h4 class="text-center">Votre choix</h4>
         <div class="form-row justify-content-center">
             <div class="col-md-4">
@@ -158,8 +187,137 @@
 
             </div>
         </div>
-        <!-------------->
+        <!-----------------modal--------------->
+        <br><br>
+        <!--------------------------------------->
+        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Finalises votre commande</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="orangeForm-name">Nom et Prénom</label>
+                            <input type="text" id="orangeForm-name" class="form-control validate">
+
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="orangeForm-email">Email</label>
+                            <input type="email" id="orangeForm-email" class="form-control validate">
+
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <label for="phone">Numéro de téléphone</label>
+                            <input type="text" id="orangeForm-email" class="form-control validate">
+                        </div>
+                        <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <label for="nom">Adresse</label>
+                            <input type="text" class="form-control" placeholder="Adresse" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-deep-orange bg-secondary">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------------------------------------->
+
+
+        <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded mb-4 border-secondary bg-secondary" data-toggle="modal" data-target="#modalRegisterForm">
+    Suivant</a>
+        </div>
     </form>
+    <br><br><br><br>
+    <!---------------------------------------------------------Footer------------------------------>
+    <section style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <!------------------------------->
+                <div class="col-md-4 col-sm-12 col-12">
+                    <img class="pt-5 ml-5" src="image/logo.webp" alt="" style="width: 35%;height: 35%;">
+                    <p class="mt-3" style="color: white; font-family: Arial, Helvetica, sans-serif;">Pour des raisons pratiques, j'ai fait le choix de ne pas avoir de boutique commerciale. Je réalise toutes mes créations et mes prestations dans mon atelier privé. <br>Pour tous renseignements, vous pouvez utiliser le formulaire de
+                        contact. <br>Je reste à votre écoute </p>
+                </div>
+                <!---->
+                <div class="col-md-4 col-sm-12 col-12">
+                    <h5 class="font-weight-bold  ml-5 pl-5 mb-5 mt-3 pt-5 text-light">Liens utiles</h5>
+
+                    <ul class="list-unstyled ml-5 pl-5">
+                        <li>
+                            <p>
+                                <a href="Acceuil.html">Acceuil</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="vetement du quotidien.html">produits</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="commande.html">Commande</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="panier.html">Panier</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="contact.html">Contact</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!----->
+                <div class="col-md-4 col-sm-12 col-12">
+                    <h5 class="font-weight-bold mb-5 mt-3 pt-5 text-light">Contact</h5>
+                    <ul class="mr-5" style="list-style: none;">
+                        <li class="d-flex"><img class="pb-2 pt-1" src="image/icon/facebook (1).png" alt="">
+                            <p class="ml-2 mt-2 text-light">Ines dhaouadi</p>
+                        </li>
+                        <li class="d-flex"><img class="py-2" src="image/icon/email (1).png" alt="">
+                            <p class="ml-2 mt-2 text-light">inesdhaouadi96@gmail.com</p>
+                        </li>
+                        <li class="d-flex"> <img class="py-2" src="image/icon/phone-call (1).png" alt="">
+                            <p class="ml-2 mt-2 text-light">+(216)25501434</p>
+                        </li>
+                        <li>
+                            <div class="d-flex mt-3">
+                                <input type="text" class="form-control mr-2 w-90" placeholder="Entrer votre newsletter" style="font-size: 13px;">
+
+
+                                <button type=" submit " class="btn btn-light ">S'inscrire</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--------------------------------->
+            </div>
+        </div>
+        <br><br>
+        <hr class="border-light w-60 ">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 " style=" color: white; ">© 2020 Copyright: DHAOUADI Ines
+        </div>
+        <!-- Copyright -->
+    </section>
+    <!-----------------------------------End footer---------------------------------->
 </body>
 
 </html>
