@@ -22,12 +22,12 @@
 
     <!--------------------------------------------------Navbar--------------------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img id="logo" src="image/logo.webp" alt=""></a>
+        <a class="navbar-brand py-1" href="#"><img id="logo" src="image/logo.webp" alt=""></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto  d-flex justify-content-between">
+            <ul class="navbar-nav ml-auto  d-flex justify-content-between" id="hover-nav">
                 <li class="nav-item"><a class="nav-link " href="Acceuil.html">Acceuil</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Produits</a>
@@ -50,46 +50,35 @@
     <!-----------------------------------------------------End navbar--------------------------------------->
     <div class="container-fluid">
         <div class="row col-md-12 col-sm-12 col-12">
-            <h1 id="titre1" class="text-center"> Haute couture sur mesure pour ELLE</h1>
+            <h1 id="titre1" class="text-center"> Haute couture sur mesure pour ELLE <br>
+                <a href="vetement du quotidien.html"> <button type="button" class=" btn btn-outline-secondary mt-5 text-center b-contact">Découvrir nos produits</button></a>
+            </h1>
+
             <img id="img1" src="image/images.jpg" alt=""></div>
     </div>
     <hr>
     <!-------------------------------------------------End navbar---------------------->
     <!---------------------------------------------------3 image----------------------->
     <div class="autre">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-3 col-sm-4 col-4">
-                    <img src="image/img1.jpg" class="rounded-circle mr-4" style="width: 60%; height: 70%;" alt="">
-                </div>
-                <div class="col-md-3 col-sm-4 col-4">
-                    <img src="image/head/img1.jpeg" class="rounded-circle" style="width: 60%; height: 70%;" alt="">
-                </div>
-                <div class="col-md-3 col-sm-4 col-4">
-                    <img src="image/img1.jpg" class="rounded-circle ml-auto" style="width: 60%; height: 70%;" alt="">
-                </div>
-                <div class="col-md-1"></div>
-            </div>
 
-        </div>
-        <hr>
 
         <!----------------------------------------------A propos---------------------->
-        <h1 class="text-center">A propos</h1>
-        <div class="container" id="apropos">
-            <div class="row">
-                <div class="col-md-6">
-                    <img id="imgapropos" src="image/img2.jpg" alt="" style="width: 80%; height: 55%;">
-                </div>
-                <div class="col-md-6">
-                    <span class="info1" style="text-align: justify;font-family: Arial;">Je suis DHAWADI Ines, Créatrice de vêtements pour femme , mes prestations s'adressent aux particuliers . Mon atelier propose la création de modèles uniques sur-mesure "haut de gamme" et des pièces pour des collections "prêt-à-porter".
+        <div class="bg-apropos">
+            <h1 class="text-center">A propos</h1>
+            <div class="container" id="apropos">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img id="imgapropos" src="image/img2.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="info1">Je suis DHAWADI Ines, Créatrice de vêtements pour femme , mes prestations s'adressent aux particuliers . Mon atelier propose la création de modèles uniques sur-mesure "haut de gamme" et des pièces pour des collections "prêt-à-porter".
                     Je mets à votre service tout mon savoir-faire et mes compétences professionnelles.Je propose également, des patronnages sur-mesure avec l'élaboration d'une toile, des patrons à coudre tirés de ma collection privée "et mes créations"
                     destinés aux femmes et adolescentes (disponibles dans toutes les tailles). Pour plus d'informations, se rendre dans la rubrique "contact". </span>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </div> <br>
 
         <!------------------------------------------------End A propos---------------------->
 
@@ -110,7 +99,7 @@
                             <h5 class="card-title ">Robe</h5>
                             <p class="card-text ">Robe voilée collection 2020</p>
                             <h6>80 DT</h6>
-                            <a href="# " class="btn btn-secondary">Acheter</a>
+                            <a href="panier.html" class="btn btn-secondary">Acheter</a>
                         </div>
                     </div>
                 </div>
@@ -124,7 +113,7 @@
                             <h5 class="card-title ">Robe</h5>
                             <p class="card-text ">Robe soirée collection 2020</p>
                             <h6>380 DT</h6>
-                            <a href="# " class="btn btn-secondary">Acheter</a>
+                            <a href="panier.html" class="btn btn-secondary">Acheter</a>
                         </div>
                     </div>
                 </div>
@@ -153,10 +142,12 @@
             <a href="vetement pour les grandesoccasions.html"> <button type="button" class="btn btn-secondary mt-5 text-center">Voir plus</button></a>
         </div>
         <!-------------------------------------------End echantillon--------------------------->
-        <h1 class="text-center mt-5" id="titre2">Témoignage</h1>
-        <hr>
-        <!--------------------------------------------Témoignage------------------------------------->
-        <section>
+        <section id="témoignage">
+            <hr class="border border-dark">
+            <h1 class="text-center mt-5" id="titre2">Témoignage</h1>
+
+            <!--------------------------------------------Témoignage------------------------------------->
+
             <div class="containers">
                 <div class="row">
                     <div class="col-md-8 col-center m-auto">
@@ -212,7 +203,7 @@
             </div>
     </div>
     </section>
-    <hr>
+    <hr class="border border-dark">
     <!---------------------------------------------End témoignage-------------------------------->
     <!---------------------------------------------------------Footer------------------------------>
     <section style="background-color: black;">
@@ -221,8 +212,11 @@
                 <!------------------------------->
                 <div class="col-md-4 col-sm-12 col-12">
                     <img class="pt-5 ml-5" src="image/logo.webp" alt="" style="width: 35%;height: 35%;">
-                    <p class="mt-3" style="color: white; font-family: Arial, Helvetica, sans-serif;">Pour des raisons pratiques, j'ai fait le choix de ne pas avoir de boutique commerciale. Je réalise toutes mes créations et mes prestations dans mon atelier privé. <br>Pour tous renseignements, vous pouvez utiliser le formulaire de
-                        contact. <br>Je reste à votre écoute </p>
+                    <p class="mt-3">
+                        <p id="information">Pour des raisons pratiques, j'ai fait le choix de ne pas avoir de boutique commerciale. Je réalise toutes mes créations et mes prestations dans mon atelier privé. <br>Pour tous renseignements, vous pouvez utiliser le formulaire
+                            de contact. <br>Je reste à votre écoute </p>
+                    </p>
+                    </p>
                 </div>
                 <!---->
                 <div class="col-md-4 col-sm-12 col-12">
@@ -271,7 +265,7 @@
                         </li>
                         <li>
                             <div class="d-flex mt-3">
-                                <input type="text" class="form-control mr-2 w-90" placeholder="Entrer votre newsletter" style="font-size: 13px;">
+                                <input type="text" class="form-control mr-2 w-90" placeholder="Entrer votre newsletter" id="input-footer">
 
 
                                 <button type="submit" class="btn btn-light">S'inscrire</button>
