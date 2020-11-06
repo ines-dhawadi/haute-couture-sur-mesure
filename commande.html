@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>*
+    <title>Document</title>
     <!---------------------------------------bootstrap---------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -50,197 +50,295 @@
 
     <!--------------------------------------------form 2----------------------->
     <br><br>
-    <form style="background-color: rgb(255, 255, 255); width:60%; margin-left: 35%;" class="border border-dark">
-        <h4 class="text-center">Votre choix</h4>
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <select id="inputState" class="form-control">
-                    <option selected> Choix de model </option>
-                    <option>model 1</option>
-                    <option>model 2</option>
-                    <option>model 3</option>
-                    <option>model 4</option>
-                    <option>model </option>
-                    
-                  </select>
-            </div>
-            <div class="col-md-4">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                    </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                    </div>
-                </div>
-            </div>
-        </div><br><br>
-        <!---->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <select id="inputState" class="form-control">
-                    <option selected> choix de tissu </option>
-                    <option>tissu 1</option>
-                    <option>tissu 2</option>
-                    <option>tissu 3</option>
-                    <option>tissu 4</option>
-                    <option>tissu 5</option>
-                    
-                  </select>
-            </div><br><br>
-            <div class="col-md-4">
-                <label for="">Choix de couleur</label>
-                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-            </div>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-12">
+                <!--****************************************************************Image************************************************-->
+                <section class="border border-dark recadrage">
+                    <!----------------------------------------------------------------------------------------------->
+                    <div class="container">
+                        <div class="row">
 
+                            <button type="button" class="btn btn-" data-toggle="tooltip" data-placement="right" style="height: 90%;" title="
+            Les mesures nécessaires :
 
-        <!----------------->
-        <hr>
-        <!----------------->
-        <h4 class="text-center">Votre mesure</h4>
-        <br>
-        <!--------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder=" Taille en cm" required>
-            </div>
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder="Tour de poitrine en cm" required>
-            </div>
-        </div>
-        <!-------------------------->
-        <br><br>
-        <!------------------------->
-        <!--------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder=" Monche  en cm" required>
-            </div>
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder="Tour de taille en cm" required>
-            </div>
-        </div>
-        <!-------------------------->
-        <br><br>
-        <!------------------------->
-        <!--------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder=" Epaules au sol en cm" required>
-            </div>
-            <div class="col-md-4">
-                <input class="form-control" type="number" id="example-number-input" placeholder="Tour de hanche en cm" required>
-            </div>
-        </div>
-        <!-------------------------->
-        <br><br>
-        <!------------ ------------------------End mesure----------------------------->
-        <hr>
-        <h4 class="text-center">Mode de livraison</h4>
-        <br>
-        <!----------------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Standard entre 3 et 5 jours (6 DT)</span>
-                  </label>
-            </div>
-            <div class="col-md-4">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Rapide max 48h (10 DT)</span>
-                  </label>
-            </div>
-        </div>
-        <!------------------------->
-        <hr>
-        <h4 class="text-center">Mode de Paiement</h4>
-        <br>
-        <!----------------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Paiement à la livraison</span>
-                  </label>
-            </div>
-            <div class="col-md-4">
-                <label class="custom-control custom-checkbox">
-                    <input type="checkbox">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Virement bancaire</span>
-                  </label>
-            </div>
-        </div>
-        <!------------------------->
-        <div class="form-row justify-content-center">
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-
-            </div>
-        </div>
-        <!-----------------modal--------------->
-        <br><br>
-        <!--------------------------------------->
-        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header text-center">
-                        <h4 class="modal-title w-100 font-weight-bold">Finalises votre commande</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                    </div>
-                    <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                            <i class="fas fa-user prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="orangeForm-name">Nom et Prénom</label>
-                            <input type="text" id="orangeForm-name" class="form-control validate">
-
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="orangeForm-email">Email</label>
-                            <input type="email" id="orangeForm-email" class="form-control validate">
+                3. Épaule — longueur d’épaule du cou à la pointe externe de l’épaule.
+                4. Longueur de bras — longueur de pointe externe de l’épaule au poignet mesuréle long du côté extérieur.
+                5. Tour poitrine — tour de poitrine mesuré le long du buste au point le plus large à travers les mamelons. 
+                7. Tour de taille — tour de taille naturelle mesurée au point le plus mince. 
+                9. Tour Hanches — tour des hanches mesuré autour du haut des hanches et des fesses au point le plus large.
+                14. Biceps — circonférence du biceps mesurée à point le plus large.
+                18. Poignet-coude — distance du poignet au coude mesurée le long du côté externe.
+                21. Couture extérieure — longueur de pantalon de point externe (longueur de bande à la cheville).
+                22. Hauteur totale — votre hauteur totale des pieds au sommet du crâne (y compris votre cou et la tête).">
+                
+                
+                <div class="col-md-4"> <img src="image/head/MESURE.jpg" id="image-commande" alt=""></div></button>
 
                         </div>
 
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <label for="phone">Numéro de téléphone</label>
-                            <input type="text" id="orangeForm-email" class="form-control validate">
-                        </div>
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <label for="nom">Adresse</label>
-                            <input type="text" class="form-control" placeholder="Adresse" required>
-                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary mt-5 b-details" data-toggle="modal" data-target="#exampleModalLong">
+    Plus de détails
+</button>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title " id="exampleModalLongTitle">Plus de détails</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+                                </div>
+                                <div class="modal-body">
+                                    1. Tête — circonférence de la tête le long des sourcils. <br> 2. Cou — circonférence du cou.<br> 3. Épaule — longueur d’épaule du cou à la pointe externe de l’épaule.<br> 4. Longueur de bras — longueur de pointe externe
+                                    de l’épaule au poignet mesuré le long du côté extérieur.<br> 5. Poitrine — tour de poitrine mesuré le long du buste au point le plus large à travers les mamelons.<br> 6. Dessous de poitrine — tour de poitrine mesure
+                                    sous le buste pour les dames.<br> 7. Tour de taille — tour de taille naturelle mesurée au point le plus mince. <br> 8. Circonférence aux os iliaques — tour horizontal du corps mesuré le long du haut des os des hanches
+                                    (crêtes iliaques).
+                                    <br>9. Hanches — tour des hanches mesuré autour du haut des hanches et des fesses au point le plus large.<br> 10. Cuisse — circonférence de la cuisse mesurée au point le plus large.<br> 11. Genou — circonférence du
+                                    genou mesurée au point le plus large.<br> 12. Mollet — circonférence du mollet mesurée au point le plus large.<br> 13. Cheville — circonférence de la cheville mesurée au point le plus large.<br> 14. Biceps — circonférence
+                                    du biceps mesurée à point le plus large. <br> 15. Coude — circonférence du coude mesurée au point le plus large.<br> 16. Avant-bras — la circonférence d’avant-bras mesurée à point le plus large.<br> 17. Poignet — la
+                                    circonférence du poignet mesurée au point le plus mince.<br> 18. Poignet-coude — distance du poignet au coude mesurée le long du côté externe.<br>19. Genou-cheville — distance à partir du milieu du genou à la cheville.<br>20.
+                                    Entrejambe — longueur de pantalon de point interne.<br>21. Couture extérieure — longueur de pantalon de point externe (longueur de bande à la cheville).<br>22. Hauteur totale — votre hauteur totale des pieds au sommet
+                                    du crâne (y compris votre cou et la tête).
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-deep-orange bg-secondary">Valider</button>
+                    <!--------------------------------------->
+                </section>
+
+                <!--***********************************************************End image*****************************************************-->
+
+            </div>
+            <div class="col-md-8 col-sm-12 col-12">
+                <form class="border border-dark" id="form-commande">
+                    <br>
+                    <h4 class="text-center">Votre choix</h4> <br>
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choix de model
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item image-model" href="#"><img src="image/robe simple/sim2.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item image-model" href="#"><img src="image/robe simple/sim4.jpg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item image-model" href="#"><img src="image/robe simple/sim7.jpg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item image-model" href="#"><img src="image/soirée/soi10.jpg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item image-model" href="#"><img src="image/soirée/soi6.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item image-model" href="#"><img src="image/soirée/soi8.jpg" class="img-thumbnail" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Proposition</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
+                    <!---->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Choix de tissu 
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img1.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img2.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img3.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img4.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img5.jpeg" class="img-thumbnail" alt=""></a>
+                                    <a class="dropdown-item img-thumbnail" href="#"><img src="image/tissu/img6.jpeg" class="img-thumbnail" alt=""></a>
+                                </div>
+                            </div>
+                        </div><br><br>
+                        <div class="col-md-4">
+                            <label for="">Choix de couleur</label>
+                            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                        </div>
                     </div>
-                </div>
+
+
+                    <!----------------->
+                    <hr>
+                    <!----------------->
+                    <h4 class="text-center">Votre mesure</h4>
+                    <br>
+                    <!--------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder=" Houteur toutale en cm" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder="Tour de poitrine en cm" required>
+                        </div>
+                    </div>
+                    <!-------------------------->
+                    <br><br>
+                    <!------------------------->
+                    <!--------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder=" Epole  en cm" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder="Tour de taille en cm" required>
+                        </div>
+                    </div>
+                    <!-------------------------->
+                    <br><br>
+                    <!--------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-3">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder=" Langeur de bras" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder="Biceps" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder=" Point-coude" required>
+                        </div>
+                    </div>
+                    <!-------------------------->
+                    <br><br>
+                    <!------------------------->
+                    <!--------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder=" couture exterieure en cm" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control size-mesure" type="number" id="example-number-input" placeholder="Tour de hanche en cm" required>
+                        </div>
+                    </div>
+                    <!-------------------------->
+                    <br><br>
+                    <!------------ ------------------------End mesure----------------------------->
+                    <hr>
+                    <h4 class="text-center">Mode de livraison</h4>
+                    <br>
+                    <!----------------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Standard entre 3 et 5 jours (6 DT)</span>
+                              </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Rapide max 48h (10 DT)</span>
+                              </label>
+                        </div>
+                    </div>
+                    <!------------------------->
+                    <hr>
+                    <h4 class="text-center">Mode de Paiement</h4>
+                    <br>
+                    <!----------------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Paiement à la livraison</span>
+                              </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Virement bancaire</span>
+                              </label>
+                        </div>
+                    </div>
+                    <!------------------------->
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
+                    <!-----------------modal--------------->
+                    <br><br>
+                    <!--------------------------------------->
+                    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Finalises votre commande</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form mb-5">
+                                        <i class="fas fa-user prefix grey-text"></i>
+                                        <label data-error="wrong" data-success="right" for="orangeForm-name">Nom et Prénom</label>
+                                        <input type="text" id="orangeForm-name" class="form-control validate">
+
+                                    </div>
+                                    <div class="md-form mb-5">
+                                        <i class="fas fa-envelope prefix grey-text"></i>
+                                        <label data-error="wrong" data-success="right" for="orangeForm-email">Email</label>
+                                        <input type="email" id="orangeForm-email" class="form-control validate">
+
+                                    </div>
+
+                                    <div class="md-form mb-4">
+                                        <i class="fas fa-lock prefix grey-text"></i>
+                                        <label for="phone">Numéro de téléphone</label>
+                                        <input type="text" id="orangeForm-email" class="form-control validate">
+                                    </div>
+                                    <div class="md-form mb-4">
+                                        <i class="fas fa-lock prefix grey-text"></i>
+                                        <label for="nom">Adresse</label>
+                                        <input type="text" class="form-control" placeholder="Adresse" required>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-deep-orange bg-secondary">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!------------------------------------------------->
+
+
+                    <div class="text-center">
+                        <a href="" class="btn btn-default btn-rounded  border-secondary bg-secondary text-light" data-toggle="modal" data-target="#modalRegisterForm">
+                Suivant</a>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
 
-
-        <!------------------------------------------------->
-
-
-        <div class="text-center">
-            <a href="" class="btn btn-default btn-rounded mb-4 border-secondary bg-secondary" data-toggle="modal" data-target="#modalRegisterForm">
-    Suivant</a>
-        </div>
-    </form>
     <br><br><br><br>
     <!---------------------------------------------------------Footer------------------------------>
     <section style="background-color: black;">

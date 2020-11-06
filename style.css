@@ -22,11 +22,14 @@
     }
     #titre1 {
         /*color: #c8a97e;*/
-        font-weight: bold;
         font-family: 'Great Vibes', cursive;
-        font-size: 60px;
-        margin-left: 45%;
-        margin-top: 15%;
+        font-size: 50px;
+        margin-left: 50%;
+        margin-top: 10%;
+        padding-top: -10%;
+    }
+    #titre1:hover {
+        color: #a03276;
     }
     /*-------------------------------------------------A propos---------------------------*/
     .info1 {
@@ -159,6 +162,26 @@
     }
     .modalform {
         padding: 20%;
+    }
+    #image-commande {
+        width: 400px;
+        height: 900px;
+    }
+    #form-commande {
+        background-color: rgb(255, 255, 255);
+        width: 85%;
+        margin-left: 10%;
+        height: 64rem;
+    }
+    .size-mesure {
+        font-size: 14px;
+    }
+    .recadrage {
+        width: 28rem;
+        height: 64rem;
+    }
+    .b-details {
+        margin-left: 10rem;
     }
     /*----------------------------------------------------------End commande--------------------------------*/
     /*-------------------------------------------------------------contact--------------------------------------------*/
