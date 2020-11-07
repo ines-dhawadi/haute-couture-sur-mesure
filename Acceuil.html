@@ -21,8 +21,10 @@
 <body>
 
     <!--------------------------------------------------Navbar--------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand py-1" href="#"><img id="logo" src="image/logo.webp" alt=""></a>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="h-navbar">
+        <a class="navbar-brand py-1" href="Acceuil.html">
+            <div><img id="logo" src="image/logo2.png" alt=""></div>
+        </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +42,7 @@
                 <li class="nav-item"><a class="nav-link " href="commande.html">Commande personnalisée</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="panier.html"><img src="image/add-to-cart.png" alt=""> Panier</a>
+                    <a class="nav-link " href="panier.html"><img id="img-panier" src="image/add-to-cart.png" alt=""> Panier</a>
                 </li>
                 <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
             </ul>
@@ -63,14 +65,14 @@
 
 
         <!----------------------------------------------A propos---------------------->
-        <div class="bg-apropos">
+        <div>
             <h1 class="text-center">A propos</h1>
             <div class="container" id="apropos">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img id="imgapropos" src="image/img2.jpg" alt="">
-                    </div>
-                    <div class="col-md-6">
+
+                    <img id="imgapropos" src="image/img2.jpg" alt="">
+
+                    <div class="border border-dark  bg-apropos">
                         <span class="info1">Je suis DHAWADI Ines, Créatrice de vêtements pour femme , mes prestations s'adressent aux particuliers . Mon atelier propose la création de modèles uniques sur-mesure "haut de gamme" et des pièces pour des collections "prêt-à-porter".
                     Je mets à votre service tout mon savoir-faire et mes compétences professionnelles.Je propose également, des patronnages sur-mesure avec l'élaboration d'une toile, des patrons à coudre tirés de ma collection privée "et mes créations"
                     destinés aux femmes et adolescentes (disponibles dans toutes les tailles). Pour plus d'informations, se rendre dans la rubrique "contact". </span>
@@ -140,15 +142,15 @@
         </div>
         <div class="text-center">
             <a href="vetement pour les grandesoccasions.html"> <button type="button" class="btn btn-secondary mt-5 text-center">Voir plus</button></a>
-        </div>
+        </div> <br><br>
         <!-------------------------------------------End echantillon--------------------------->
         <section id="témoignage">
             <hr class="border border-dark">
-            <h1 class="text-center mt-5" id="titre2">Témoignage</h1>
+            <h1 class="text-center " id="titre3">Témoignage</h1>
 
             <!--------------------------------------------Témoignage------------------------------------->
 
-            <div class="containers">
+            <div class="containers pb-5 mb-5">
                 <div class="row">
                     <div class="col-md-8 col-center m-auto">
                         <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -158,8 +160,9 @@
                                         <img src="image/témoignage/t3.jpeg" alt="">
                                     </div>
                                     <p class="testimonial text-dark">
-                                        <blockquote class="text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ex laboriosam numquam assumenda repudiandae labore aspernatur natus excepturi esse suscipit. Atque, minima aliquam beatae quasi sit amet illum tempore
-                                            accusamus!
+                                        <blockquote class="text-dark">
+                                            Bonjour, Je tenais à vous remercier de la qualité de votre travail, par votre atelier de couture. J'adore la qualité de la robe que vous avez cousues pour moicar toutes les précautions sont prises. Je trouve une ambiance super sympa et un sourire permanent
+                                            à chaque fois que je regarde cette robe et surtout sa couture avec un modèle spécial. Mille et une fois merci
                                         </blockquote>
                                     </p>
                                     <p class="overview"><b>Najla khouildi</b></p>
@@ -169,8 +172,9 @@
                                         <img src="image/témoignage/t2.jpeg" alt="">
                                     </div>
                                     <p class="testimonial">
-                                        <blockquote class="text-dark"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ex laboriosam numquam assumenda repudiandae labore aspernatur natus excepturi esse suscipit. Atque, minima aliquam beatae quasi sit amet illum tempore
-                                            accusamus!
+                                        <blockquote class="text-dark"> Remerciant à l'endroit de la couturière : je tenais à vous exprimer mes remerciements les plus sincères pour la qualité du travail que vous avez effectué pour moi. Vous m'avez cousu une robe et votre prestation
+                                            m'a apporté une très grande satisfaction. Une robe sur mesure waouhhhhh qu'elle satisfaction ?
+
                                         </blockquote>
                                     </p>
                                     <p class="overview"><b>Imen ghawasi</b> </p>
@@ -206,13 +210,13 @@
     <hr class="border border-dark">
     <!---------------------------------------------End témoignage-------------------------------->
     <!---------------------------------------------------------Footer------------------------------>
-    <section style="background-color: black;">
+    <footer style="background-color: black;">
         <div class="container">
             <div class="row">
                 <!------------------------------->
                 <div class="col-md-4 col-sm-12 col-12">
-                    <img class="pt-5 ml-5" src="image/logo.webp" alt="" style="width: 35%;height: 35%;">
-                    <p class="mt-3">
+                    <img class=" pt-4" src="image/logo2.png" alt="" style="width: 55%;height: 55%;">
+                    <p>
                         <p id="information">Pour des raisons pratiques, j'ai fait le choix de ne pas avoir de boutique commerciale. Je réalise toutes mes créations et mes prestations dans mon atelier privé. <br>Pour tous renseignements, vous pouvez utiliser le formulaire
                             de contact. <br>Je reste à votre écoute </p>
                     </p>
@@ -222,7 +226,7 @@
                 <div class="col-md-4 col-sm-12 col-12">
                     <h5 class="font-weight-bold  ml-5 pl-5 mb-5 mt-3 pt-5 text-light">Liens utiles</h5>
 
-                    <ul class="list-unstyled ml-5 pl-5">
+                    <ul class="list-unstyled ml-5 pl-5" id="link">
                         <li>
                             <p>
                                 <a href="Acceuil.html">Acceuil</a>
@@ -282,7 +286,7 @@
         <div class="footer-copyright text-center py-3" style=" color: white;">© 2020 Copyright: DHAOUADI Ines
         </div>
         <!-- Copyright -->
-    </section>
+    </footer>
     <!-----------------------------------End footer---------------------------------->
 </body>
 

@@ -18,13 +18,15 @@
 
 <body>
     <!--------------------------------------------------Navbar--------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img id="logo" src="image/logo.webp" alt=""></a>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="h-navbar">
+        <a class="navbar-brand py-1" href="Acceuil.html">
+            <div><img id="logo" src="image/logo2.png" alt=""></div>
+        </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto  d-flex justify-content-between">
+            <ul class="navbar-nav ml-auto  d-flex justify-content-between" id="hover-nav">
                 <li class="nav-item"><a class="nav-link " href="Acceuil.html">Acceuil</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Produits</a>
@@ -37,7 +39,7 @@
                 <li class="nav-item"><a class="nav-link " href="commande.html">Commande personnalisée</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="panier.html"><img src="image/add-to-cart.png" alt=""> Panier</a>
+                    <a class="nav-link " href="panier.html"><img id="img-panier" src="image/add-to-cart.png" alt=""> Panier</a>
                 </li>
                 <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
             </ul>
@@ -362,13 +364,13 @@
 
     <!------------*********************************************************************-->
     <!---------------------------------------------------------Footer------------------------------>
-    <section style="background-color: black;">
+    <footer style="background-color: black;">
         <div class="container">
             <div class="row">
                 <!------------------------------->
                 <div class="col-md-4 col-sm-12 col-12">
-                    <img class="pt-5 ml-5" src="image/logo.webp" alt="" style="width: 35%;height: 35%;">
-                    <p class="mt-3">
+                    <img class=" pt-4" src="image/logo2.png" alt="" style="width: 55%;height: 55%;">
+                    <p>
                         <p id="information">Pour des raisons pratiques, j'ai fait le choix de ne pas avoir de boutique commerciale. Je réalise toutes mes créations et mes prestations dans mon atelier privé. <br>Pour tous renseignements, vous pouvez utiliser le formulaire
                             de contact. <br>Je reste à votre écoute </p>
                     </p>
@@ -378,7 +380,7 @@
                 <div class="col-md-4 col-sm-12 col-12">
                     <h5 class="font-weight-bold  ml-5 pl-5 mb-5 mt-3 pt-5 text-light">Liens utiles</h5>
 
-                    <ul class="list-unstyled ml-5 pl-5">
+                    <ul class="list-unstyled ml-5 pl-5" id="link">
                         <li>
                             <p>
                                 <a href="Acceuil.html">Acceuil</a>
@@ -424,7 +426,7 @@
                                 <input type="text" class="form-control mr-2 w-90" placeholder="Entrer votre newsletter" id="input-footer">
 
 
-                                <button type=" submit " class="btn btn-light ">S'inscrire</button>
+                                <button type="submit" class="btn btn-light">S'inscrire</button>
                             </div>
                         </li>
                     </ul>
@@ -433,12 +435,12 @@
             </div>
         </div>
         <br><br>
-        <hr class="border-light w-60 ">
+        <hr class="border-light w-60">
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3 " style=" color: white; ">© 2020 Copyright: DHAOUADI Ines
+        <div class="footer-copyright text-center py-3" style=" color: white;">© 2020 Copyright: DHAOUADI Ines
         </div>
         <!-- Copyright -->
-    </section>
+    </footer>
     <!-----------------------------------End footer---------------------------------->
 </body>
 
