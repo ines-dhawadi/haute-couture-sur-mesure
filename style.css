@@ -275,16 +275,61 @@ footer a:hover {
     color: #a03276;
 }
 
+#logo-footer {
+    width: 55%;
+    height: 55%;
+}
+
+#liens-utiles-footer {
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+#link {
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+#contact-footer {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
 
 /*-----------------------------------------------------------------------------------------------*/
 
 
 /*---------------------------------------------***** V-q ****--------------------------------------------*/
 
+#card-shadow {
+    width: 18rem;
+    height: 37rem;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#card-image {
+    height: 25rem;
+}
+
 .hover-card :hover {
     opacity: 0.5;
     transform: scale(1.2);
     transition: 2s;
+}
+
+#img-couleur {
+    width: 20%;
+    height: 30%;
+}
+
+#size-texte {
+    font-size: 2rem;
+}
+
+.b-acheter {
+    margin-left: 65px;
 }
 
 

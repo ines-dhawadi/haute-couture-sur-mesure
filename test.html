@@ -458,6 +458,7 @@
         </div>
     </div>
     <!--------------------------------------------------------->
+    <button class="nostyle collection-option toggle-share flaticon-share tooltip__trigger tooltip__trigger--disabled track" data-track-arguments="ga, event, collections, menu, share" disabled=""> Share</button>
     <!---------------------------------------------->
     <div class="col-md-4 col-sm-6 col-12 pt-4">
         <div class="card" style="width: 18rem;height: 37rem;border: 1px solid;
@@ -465,30 +466,38 @@
         box-shadow: 5px 10px 18px #888888;">
             <img class="card-img-top" src="image/robe simple/sim3.jpg" alt="Card image cap" style="height: 25rem;">
             <div class=" card-body ">
-                <h5 class="card-title ">Robe</h5>
-                <p class="card-text ">Collection 2020</p>
+                <h5 class="card-title ">Robe Collection 2020</h5>
+
                 <h6>80 DT</h6>
-                <!------------------------>
+                <!----------************************************************icone******************************************************-------------->
 
                 <ul class="nav nav-tabs">
 
-                    <li><a data-toggle="tab" href="#menu1">couleur</a></li> <br>
-                    <li><a data-toggle="tab" href="#menu2">taille</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Couleurs disponible</a></li>
+
+                    <li><a data-toggle="tab" href="#menu2">Tailles disponible</a></li>
                 </ul>
 
                 <div class="tab-content d-flex">
 
                     <div id="menu1" class="tab-pane fade ">
+                        Couleurs disponible
 
-                        <img src="image/tissu/img1.jpeg" width="20%" height="60%" alt="">
-                        <img src="image/tissu/img1.jpeg" width="20%" height="60%" alt="">
-                        <img src="image/tissu/img1.jpeg" width="20%" height="60%" alt="">
+                        <img src="image/tissu/img1.jpeg" id="img-couleur" alt="">
+                        <img src="image/tissu/img2.jpeg" id="img-couleur" alt="">
+                        <img src="image/tissu/img3.jpeg" id="img-couleur" alt="">
+                        <img src="image/tissu/img4.jpeg" id="img-couleur" alt="">
+                        <img src="image/tissu/img5.jpeg" id="img-couleur" alt="">
+                        <img src="image/tissu/img6.jpeg" id="img-couleur" alt="">
+
                     </div>
-                    <div id="menu2" class="tab-pane fade">
-
-                        <img src="image/tissu/img1.jpeg" alt="">
-                        <img src="image/tissu/img1.jpeg" alt="">
-                        <img src="image/tissu/img1.jpeg" alt="">
+                    <div id="menu2" class="tab-pane fade ">
+                        Tailles disponible
+                        <span class="border border-darck" id="size-texte">S</span>
+                        <span class="border border-darck" id="size-texte">M</span>
+                        <span class="border border-darck" id="size-texte">L</span>
+                        <span class="border border-darck" id="size-texte">XL</span>
+                        <span class="border border-darck" id="size-texte">XXL</span>
                     </div>
                 </div>
                 <!------------------------->
@@ -497,6 +506,118 @@
     </div>
 
     <!-------------------------------------------------->
+    <!----------------------****************************modal****************************************-->
+    <div class="container">
+
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
+          <img src="image/icon/share.png" alt="">
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> Couleurs et Tailles disponible</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+
+                        <div class="d-flex  justify-content-between">
+                            <img src="image/tissu/img1.jpeg" id="img-couleur" alt="">
+                            <img src="image/tissu/img2.jpeg" id="img-couleur" alt="">
+                            <img src="image/tissu/img3.jpeg" id="img-couleur" alt="">
+                            <img src="image/tissu/img4.jpeg" id="img-couleur" alt="">
+                            <img src="image/tissu/img5.jpeg" id="img-couleur" alt="">
+                            <img src="image/tissu/img6.jpeg" id="img-couleur" alt="">
+                        </div>
+                        <br><br>
+                        <div class="d-flex justify-content-between">
+                            <span class="border border-darck" id="size-texte">S</span>
+                            <span class="border border-darck" id="size-texte">M</span>
+                            <span class="border border-darck" id="size-texte">L</span>
+                            <span class="border border-darck" id="size-texte">XL</span>
+                            <span class="border border-darck" id="size-texte">XXL</span>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------------------------------------------ajou-fini-------------------------------->
+    <div class="row">
+        <div class=" .col-md-3">
+            <p class="card-text ">Robe voilée collection 2020</p>
+        </div>
+        <div class=" .col-md-1">
+
+            <div class="container">
+
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-secondary ml-5" data-toggle="modal" data-target="#myModal">
+              <img src="image/icon/share.png" alt="">
+            </button>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"> Couleurs et Tailles disponible</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+
+                                <div class="d-flex  justify-content-between">
+                                    <img src="image/tissu/img1.jpeg" id="img-couleur" alt="">
+                                    <img src="image/tissu/img2.jpeg" id="img-couleur" alt="">
+                                    <img src="image/tissu/img3.jpeg" id="img-couleur" alt="">
+                                    <img src="image/tissu/img4.jpeg" id="img-couleur" alt="">
+                                    <img src="image/tissu/img5.jpeg" id="img-couleur" alt="">
+                                    <img src="image/tissu/img6.jpeg" id="img-couleur" alt="">
+                                </div>
+                                <br><br>
+                                <div class="d-flex justify-content-between">
+                                    <span class="border border-darck" id="size-texte">S</span>
+                                    <span class="border border-darck" id="size-texte">M</span>
+                                    <span class="border border-darck" id="size-texte">L</span>
+                                    <span class="border border-darck" id="size-texte">XL</span>
+                                    <span class="border border-darck" id="size-texte">XXL</span>
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------------------ajou-fini-------------------------------->
+
 </body>
 
 
