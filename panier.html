@@ -14,20 +14,29 @@
     <link rel="stylesheet" href="style2.css">
     <!-----------------------------------------------font------------------------------------->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/images.jpg">
 </head>
 
 <body>
     <!--------------------------------------------------Navbar--------------------------------->
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="h-navbar">
         <a class="navbar-brand py-1" href="Acceuil.html">
-            <div><img id="logo" src="image/logo2.png" alt=""></div>
+            <img id="logo" src="image/2logo.webp" alt="">
         </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <span class="navbar-toggler-icon"></span>
+</button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto  d-flex justify-content-between" id="hover-nav">
-                <li class="nav-item"><a class="nav-link " href="Acceuil.html">Acceuil</a></li>
+            <ul class="navbar-nav ml-auto  " id="hover-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Acceuil</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Acceuil.html">A propos</a>
+                        <a class="dropdown-item" href="qualité.html">Charte de qualité </a>
+
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Produits</a>
                     <div class="dropdown-menu">
@@ -39,7 +48,7 @@
                 <li class="nav-item"><a class="nav-link " href="commande.html">Commande personnalisée</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="panier.html"><img id="img-panier" src="image/add-to-cart.png" alt=""> Panier</a>
+                    <a class="nav-link " href="panier.html"><img src="image/add-to-cart.png" alt=""> Panier</a>
                 </li>
                 <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
             </ul>
@@ -50,44 +59,53 @@
     <img style="width: 100%; " id="IMG" src="image/head/img4.jpeg" alt="">
     <h1 class="text-center mt-5" id="titre2">Panier</h1>
     <!-------------------------------------table 1-------------------------------------->
-    <div class="container" id="table-panier" style="width: 90%;">
+    <div class="container w-75">
+        <table class="table" id="cont_panier=">
+            <thead class="thead-light">
+                <tr>
+                    <th>Article</th>
+                    <th></th>
+                    <th>Quantité</th>
+                    <th>Prix unitaire</th>
+                    <th>Sous-Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/robe simple/sim3.jpg" class="img-thumbnail" id="img-panier" alt="">
+                    </td>
+                    <td>
+                        <p class="pr-5 pt-4">Robe voilée collection 2020 <br>Taille 40</p>
+                    </td>
 
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-12">
-                <table class="table">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>Article</th>
-                            <th></th>
-                            <th>Quantité</th>
-                            <th>Prix unitaire</th>
-                            <th>Sous-Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="image/robe simple/sim3.jpg" alt="" style="width: 30%; height: 20%;border: 1px solid;
-                                padding: 10px;
-                                box-shadow: 5px 10px 18px #888888;">
-                            </td>
-                            <td>
-                                <p class="pr-5 pt-4">Robe voilée collection 2020 <br>Taille 40</p>
-                            </td>
+                    <td><input type="number" placeholder="01" class="mt-4"></td>
+                    <td>
+                        <p class="mt-4 ml-5">80 DT</p>
+                    </td>
+                    <td>
+                        <p class="mt-4 ml-7">80 DT</p>
+                    </td>
 
-                            <td><input type="number" placeholder="01" class="mt-4"></td>
-                            <td>
-                                <p class="mt-4 ml-5">80 DT</p>
-                            </td>
-                            <td>
-                                <p class="mt-4 ml-7">80 DT</p>
-                            </td>
+                </tr>
+                <tr>
+                    <td><img  class="img-thumbnail" src="image/soirée/soi4.jpg" id="img-panier" alt="">
+                    </td>
+                    <td>
+                        <p class="pr-5 pt-4">Robe voilée collection 2020 <br>Taille 38</p>
+                    </td>
 
-                        </tr>
+                    <td><input type="number" placeholder="01" class="mt-4"></td>
+                    <td>
+                        <p class="mt-4 ml-5">165DT</p>
+                    </td>
+                    <td>
+                        <p class="mt-4 ml-7">165 DT</p>
+                    </td>
+                    <tr></tr>
+                </tr>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
+            </tbody>
+        </table>
     </div>
     <!---------------------------version table min 1 -------------------------->
 
@@ -177,45 +195,7 @@
     <!---------------------------End version table min 1 -------------------------->
     <br> <br><br>
     <!-------------------------------------table 2-------------------------------------->
-    <div class="container" id="table-panier" style="width: 90%;">
 
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-12">
-                <table class="table">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>Article</th>
-                            <th></th>
-                            <th>Quantité</th>
-                            <th>Prix unitaire</th>
-                            <th>Sous-Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="image/soirée/soi7.jpg" alt="" style="width: 30%; height: 20%;border: 1px solid;
-                                padding: 10px;
-                                box-shadow: 5px 10px 18px #888888;">
-                            </td>
-                            <td>
-                                <p class="pr-5 pt-4">Robe soirée collection 2020 <br>Taille 38</p>
-                            </td>
-
-                            <td><input type="number" placeholder="01" class="mt-4"></td>
-                            <td>
-                                <p class="mt-4 ml-5">160 DT</p>
-                            </td>
-                            <td>
-                                <p class="mt-4 ml-7">160 DT</p>
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
     <!---------------------------version table min 2 -------------------------->
 
     <!------------------->
@@ -233,7 +213,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="image/soirée/soi7.jpg" alt="" style="width: 90%; height: 40%;border: 1px solid;
+                        <td><img src="image/soirée/soi4.jpg" alt="" style="width: 90%; height: 40%;border: 1px solid;
                             padding: 10px;
                             box-shadow: 5px 10px 18px #888888;">
                         </td>
@@ -286,10 +266,10 @@
                     <tr>
 
                         <td>
-                            <p class="mt-4 ml-5">160 DT</p>
+                            <p class="mt-4 ml-5">165 DT</p>
                         </td>
                         <td>
-                            <p class="mt-4 ml-7">160 DT</p>
+                            <p class="mt-4 ml-7">165 DT</p>
                         </td>
 
                     </tr>
@@ -302,7 +282,7 @@
         Finalises votre commande </div><br><br><br>
     <!--------------------->
     <div class="text-center">
-        <p class="border border-dark w-25" style="margin-left: 38%;"> <strong>Total : 240 DT</strong> </p><br> <br><br>
+        <p class="border border-dark w-25" style="margin-left: 38%;" id="b-fin-panier"> <strong>Total : 245 DT</strong> </p><br> <br><br>
         <button type="button" class="btn btn-secondary">Finalises votre commande</button></div>
     <!---------------------------End version table min 2 -------------------------->
     <br><br><br>

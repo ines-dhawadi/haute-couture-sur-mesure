@@ -1,248 +1,263 @@
-                                                            @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
-                                                            * {
-                                                                font-family: 'Open Sans Condensed', sans-serif;
-                                                            }
-                                                            
-                                                            @media only screen and (max-width: 601px) {
-                                                                /*-------------------------------------------head--------------------------------*/
-                                                                #logo {
-                                                                    width: 15%;
-                                                                    height: 30%;
+                                                                @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+                                                                * {
+                                                                    font-family: 'Open Sans Condensed', sans-serif;
                                                                 }
-                                                                #logo2 {
-                                                                    display: none;
+                                                                
+                                                                @media only screen and (max-width: 601px) {
+                                                                    /*-------------------------------------------head--------------------------------*/
+                                                                    #logo {
+                                                                        display: none;
+                                                                    }
+                                                                    #logo2 {
+                                                                        display: none;
+                                                                    }
+                                                                    .navbar-toggler {
+                                                                        padding-top: -10%;
+                                                                    }
+                                                                    #img1 {
+                                                                        margin-left: 5%;
+                                                                        width: 45%;
+                                                                        height: 45%;
+                                                                        margin-top: -35%;
+                                                                    }
+                                                                    #titre1 {
+                                                                        font-weight: bold;
+                                                                        font-family: 'Great Vibes', cursive;
+                                                                        font-size: 20px;
+                                                                        margin-left: 50%;
+                                                                        margin-top: 20%;
+                                                                        margin-bottom: -10%;
+                                                                    }
+                                                                    #IMG {
+                                                                        width: 30%;
+                                                                    }
+                                                                    #IMG-contact {
+                                                                        width: 100%;
+                                                                    }
+                                                                    .navbar-nav .nav-item .nav-link:hover {
+                                                                        color: #a03276;
+                                                                    }
+                                                                    #titre1:hover {
+                                                                        color: #a03276;
+                                                                    }
+                                                                    .btn-outline-secondary {
+                                                                        background-color: #a03276;
+                                                                    }
+                                                                    /*------------------------------------------------------*/
+                                                                    /*-----------------------------------------------Apropos--------------------------------*/
+                                                                    #imgapropos {
+                                                                        margin-bottom: -50%;
+                                                                        height: 20rem;
+                                                                        width: 20rem;
+                                                                        margin-left: 2rem;
+                                                                    }
+                                                                    .info1 {
+                                                                        font-size: 16px;
+                                                                        line-height: 33px;
+                                                                        text-align: justify;
+                                                                    }
+                                                                    .bg-apropos {
+                                                                        height: 45%;
+                                                                        width: 70%;
+                                                                        margin-top: 13rem;
+                                                                        padding: 1rem;
+                                                                        margin-left: 50px;
+                                                                    }
+                                                                    .bg-apropos:hover {
+                                                                        background-color: white;
+                                                                    }
+                                                                    /*----------------------------------------------------Echantillon---------------------------------*/
+                                                                    #card_echantillon {
+                                                                        width: 80%;
+                                                                        margin-left: 2rem;
+                                                                    }
+                                                                    /*-------------------------------------------------témoignage--------------------------*/
+                                                                    h3 {
+                                                                        color: #333;
+                                                                        text-align: center;
+                                                                        text-transform: uppercase;
+                                                                        font-weight: bold;
+                                                                        position: relative;
+                                                                        margin: 30px 0 60px;
+                                                                    }
+                                                                    h3::after {
+                                                                        content: "";
+                                                                        width: 140px;
+                                                                        position: absolute;
+                                                                        margin: 0 auto;
+                                                                        height: 3px;
+                                                                        background-color: #db504e;
+                                                                        left: 0;
+                                                                        right: 0;
+                                                                        bottom: -10px;
+                                                                        opacity: -8;
+                                                                    }
+                                                                    .col-center {
+                                                                        margin: 0 auto;
+                                                                        float: none !important;
+                                                                    }
+                                                                    .carousel {
+                                                                        margin: 50px auto;
+                                                                        padding: 0 70px;
+                                                                    }
+                                                                    .carousel-item {
+                                                                        color: #999;
+                                                                        font-size: 14px;
+                                                                        text-align: center;
+                                                                        overflow: hidden;
+                                                                        min-height: 298px;
+                                                                    }
+                                                                    .carousel .item .img-box {
+                                                                        width: 135px;
+                                                                        height: 135px;
+                                                                        margin: 0 auto;
+                                                                        padding: 5px;
+                                                                        border: 1px solid #ddd;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    .carousel .img-box img {
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        display: block;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    .carousel .testimonial {
+                                                                        padding: 38px 0 18px;
+                                                                    }
+                                                                    .carousel .overview {
+                                                                        font-style: italic;
+                                                                    }
+                                                                    .carousel .overview b {
+                                                                        text-transform: uppercase;
+                                                                        color: #db504e;
+                                                                    }
+                                                                    .carousel .carousel-control {
+                                                                        width: 48px;
+                                                                        height: 48px;
+                                                                        margin-top: -28px;
+                                                                        top: 50%;
+                                                                        background: none;
+                                                                    }
+                                                                    .carousel-control i {
+                                                                        font-size: 68px;
+                                                                        line-height: 42px;
+                                                                        position: absolute;
+                                                                        display: inline-block;
+                                                                        color: rgba(0, 0, 0, 0);
+                                                                        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+                                                                    }
+                                                                    .carousel .carousel-indicators {
+                                                                        bottom: -48px;
+                                                                    }
+                                                                    .carousel .carousel-indicators li,
+                                                                    .carousel .carousel-indicators li.active {
+                                                                        width: 10px;
+                                                                        height: 10px;
+                                                                        margin: 1px 3px;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    .carousel .carousel-indicators li {
+                                                                        background: #999;
+                                                                        border-color: transparent;
+                                                                        box-shadow: 0 2px 1px rgba(0, 0, 0, 0, 2);
+                                                                    }
+                                                                    .carousel .carousel-indicators li.active {
+                                                                        background: #555;
+                                                                        box-shadow: 0 2px 1px rgba(0, 0, 0, 0, 2);
+                                                                    }
+                                                                    .banner {
+                                                                        padding: 200px 0;
+                                                                    }
+                                                                    .banner h2 {
+                                                                        font-size: 1.8em;
+                                                                    }
+                                                                    /*----------------------------------------------------End témoignage---------------------------------------*/
+                                                                    /*-----------------------------------------------------Vetement du quotidien-----------------------------------*/
+                                                                    /*-----------------------------------------------------End Vetement du quotidien-----------------------------------*/
+                                                                    .card-produits-q {
+                                                                        width: 80%;
+                                                                        margin-left: 2rem;
+                                                                    }
+                                                                    /*-------------------------------------------------------Vetement-O-----------------------------------------*/
+                                                                    #card-V-O {
+                                                                        margin-left: 6rem;
+                                                                    }
+                                                                    /*----------------------------------------------------------Panier-------------------------------------------*/
+                                                                    #table-panier {
+                                                                        display: none;
+                                                                    }
+                                                                    #table-min {
+                                                                        border: 1px solid;
+                                                                        padding: 10px;
+                                                                        box-shadow: 5px 10px 18px #888888;
+                                                                        width: 80%;
+                                                                    }
+                                                                    /*------------------------------------------------------ commande----------------------------------*/
+                                                                    .custom-control-description {
+                                                                        font-size: 13px;
+                                                                    }
+                                                                    #image-commande {
+                                                                        width: 20rem;
+                                                                        margin-bottom: 2rem;
+                                                                        height: 45rem;
+                                                                    }
+                                                                    .recadrage {
+                                                                        width: 24rem;
+                                                                        height: 52rem;
+                                                                        margin-bottom: 2rem;
+                                                                    }
+                                                                    #b-plus-commande {
+                                                                        margin-bottom: 4rem;
+                                                                        margin-left: 13rem;
+                                                                    }
+                                                                    footer {
+                                                                        align-items: center;
+                                                                    }
+                                                                    /*----------------------------------------------------------End commande--------------------------------*/
+                                                                    /*------------------------------------------------------------------------footer----------------------------------------------*/
+                                                                    #information {
+                                                                        color: white;
+                                                                        margin-top: -15%;
+                                                                        text-align: center;
+                                                                    }
+                                                                    #logo-footer {
+                                                                        width: 55%;
+                                                                        height: 65%;
+                                                                        margin-left: 5rem;
+                                                                    }
+                                                                    #liens-utiles-footer {
+                                                                        margin-left: -1rem;
+                                                                        text-align: center;
+                                                                    }
+                                                                    #link {
+                                                                        margin-left: -1rem;
+                                                                        text-align: center;
+                                                                    }
+                                                                    #contact-footer {
+                                                                        text-align: center;
+                                                                        margin-left: -1rem;
+                                                                    }
+                                                                    #icon-contact {
+                                                                        margin-left: 5rem;
+                                                                    }
+                                                                    #input-footer {
+                                                                        margin-left: 1rem;
+                                                                        margin-right: -1rem;
+                                                                    }
+                                                                    footer a {
+                                                                        color: white;
+                                                                    }
+                                                                    footer a:hover {
+                                                                        color: #a03276;
+                                                                    }
+                                                                    /*---------------------------------------------------------------End footer----------------------
+                                                                     /*---------------------------------------------------------------qualite------------------------------------*/
+                                                                    span {
+                                                                        color: #a03276;
+                                                                    }
+                                                                    #valeur {
+                                                                        background-color: black;
+                                                                        color: white;
+                                                                        margin-bottom: -2rem;
+                                                                    }
                                                                 }
-                                                                .navbar-toggler {
-                                                                    padding-top: -10%;
-                                                                }
-                                                                #img1 {
-                                                                    margin-left: 5%;
-                                                                    width: 45%;
-                                                                    height: 45%;
-                                                                    margin-top: -35%;
-                                                                }
-                                                                #titre1 {
-                                                                    font-weight: bold;
-                                                                    font-family: 'Great Vibes', cursive;
-                                                                    font-size: 20px;
-                                                                    margin-left: 50%;
-                                                                    margin-top: 20%;
-                                                                    margin-bottom: -10%;
-                                                                }
-                                                                #IMG {
-                                                                    width: 30%;
-                                                                }
-                                                                #IMG-contact {
-                                                                    width: 100%;
-                                                                }
-                                                                .navbar-nav .nav-item .nav-link:hover {
-                                                                    color: #a03276;
-                                                                }
-                                                                #titre1:hover {
-                                                                    color: #a03276;
-                                                                }
-                                                                .btn-outline-secondary {
-                                                                    background-color: #a03276;
-                                                                }
-                                                                /*------------------------------------------------------*/
-                                                                /*-----------------------------------------------Apropos--------------------------------*/
-                                                                #imgapropos {
-                                                                    margin-bottom: -50%;
-                                                                    height: 20rem;
-                                                                    width: 30rem;
-                                                                    margin-left: 2rem;
-                                                                }
-                                                                .info1 {
-                                                                    margin-top: 8rem;
-                                                                    font-size: 16px;
-                                                                    line-height: 33px;
-                                                                    text-align: justify;
-                                                                }
-                                                                .bg-apropos {
-                                                                    height: 65%;
-                                                                    width: 80%;
-                                                                    margin-top: 13rem;
-                                                                    padding: 1rem;
-                                                                    margin-left: 50px;
-                                                                }
-                                                                .bg-apropos:hover {
-                                                                    background-color: white;
-                                                                }
-                                                                /*----------------------------------------------------Echantillon---------------------------------*/
-                                                                #card_echantillon {
-                                                                    margin-left: 6rem;
-                                                                }
-                                                                /*-------------------------------------------------témoignage--------------------------*/
-                                                                h3 {
-                                                                    color: #333;
-                                                                    text-align: center;
-                                                                    text-transform: uppercase;
-                                                                    font-weight: bold;
-                                                                    position: relative;
-                                                                    margin: 30px 0 60px;
-                                                                }
-                                                                h3::after {
-                                                                    content: "";
-                                                                    width: 140px;
-                                                                    position: absolute;
-                                                                    margin: 0 auto;
-                                                                    height: 3px;
-                                                                    background-color: #db504e;
-                                                                    left: 0;
-                                                                    right: 0;
-                                                                    bottom: -10px;
-                                                                    opacity: -8;
-                                                                }
-                                                                .col-center {
-                                                                    margin: 0 auto;
-                                                                    float: none !important;
-                                                                }
-                                                                .carousel {
-                                                                    margin: 50px auto;
-                                                                    padding: 0 70px;
-                                                                }
-                                                                .carousel-item {
-                                                                    color: #999;
-                                                                    font-size: 14px;
-                                                                    text-align: center;
-                                                                    overflow: hidden;
-                                                                    min-height: 298px;
-                                                                }
-                                                                .carousel .item .img-box {
-                                                                    width: 135px;
-                                                                    height: 135px;
-                                                                    margin: 0 auto;
-                                                                    padding: 5px;
-                                                                    border: 1px solid #ddd;
-                                                                    border-radius: 50%;
-                                                                }
-                                                                .carousel .img-box img {
-                                                                    width: 100%;
-                                                                    height: 100%;
-                                                                    display: block;
-                                                                    border-radius: 50%;
-                                                                }
-                                                                .carousel .testimonial {
-                                                                    padding: 38px 0 18px;
-                                                                }
-                                                                .carousel .overview {
-                                                                    font-style: italic;
-                                                                }
-                                                                .carousel .overview b {
-                                                                    text-transform: uppercase;
-                                                                    color: #db504e;
-                                                                }
-                                                                .carousel .carousel-control {
-                                                                    width: 48px;
-                                                                    height: 48px;
-                                                                    margin-top: -28px;
-                                                                    top: 50%;
-                                                                    background: none;
-                                                                }
-                                                                .carousel-control i {
-                                                                    font-size: 68px;
-                                                                    line-height: 42px;
-                                                                    position: absolute;
-                                                                    display: inline-block;
-                                                                    color: rgba(0, 0, 0, 0);
-                                                                    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-                                                                }
-                                                                .carousel .carousel-indicators {
-                                                                    bottom: -48px;
-                                                                }
-                                                                .carousel .carousel-indicators li,
-                                                                .carousel .carousel-indicators li.active {
-                                                                    width: 10px;
-                                                                    height: 10px;
-                                                                    margin: 1px 3px;
-                                                                    border-radius: 50%;
-                                                                }
-                                                                .carousel .carousel-indicators li {
-                                                                    background: #999;
-                                                                    border-color: transparent;
-                                                                    box-shadow: 0 2px 1px rgba(0, 0, 0, 0, 2);
-                                                                }
-                                                                .carousel .carousel-indicators li.active {
-                                                                    background: #555;
-                                                                    box-shadow: 0 2px 1px rgba(0, 0, 0, 0, 2);
-                                                                }
-                                                                .banner {
-                                                                    padding: 200px 0;
-                                                                }
-                                                                .banner h2 {
-                                                                    font-size: 1.8em;
-                                                                }
-                                                                /*----------------------------------------------------End témoignage---------------------------------------*/
-                                                                /*-----------------------------------------------------Vetement du quotidien-----------------------------------*/
-                                                                /*-----------------------------------------------------End Vetement du quotidien-----------------------------------*/
-                                                                .card-produits-q {
-                                                                    margin-left: 6rem;
-                                                                }
-                                                                /*-------------------------------------------------------Vetement-O-----------------------------------------*/
-                                                                #card-V-O {
-                                                                    margin-left: 6rem;
-                                                                }
-                                                                /*----------------------------------------------------------Panier-------------------------------------------*/
-                                                                #table-panier {
-                                                                    display: none;
-                                                                }
-                                                                #table-min {
-                                                                    border: 1px solid;
-                                                                    padding: 10px;
-                                                                    box-shadow: 5px 10px 18px #888888;
-                                                                    width: 80%;
-                                                                }
-                                                                /*------------------------------------------------------ commande----------------------------------*/
-                                                                .custom-control-description {
-                                                                    font-size: 13px;
-                                                                }
-                                                                #image-commande {
-                                                                    width: 27rem;
-                                                                    margin-bottom: 2rem;
-                                                                    height: 45rem;
-                                                                }
-                                                                .recadrage {
-                                                                    width: 32rem;
-                                                                    height: 52rem;
-                                                                    margin-bottom: 2rem;
-                                                                }
-                                                                #b-plus-commande {
-                                                                    margin-bottom: 4rem;
-                                                                    margin-left: 13rem;
-                                                                }
-                                                                footer {
-                                                                    align-items: center;
-                                                                }
-                                                                /*----------------------------------------------------------End commande--------------------------------*/
-                                                                /*------------------------------------------------------------------------footer----------------------------------------------*/
-                                                                #information {
-                                                                    color: white;
-                                                                    margin-top: -15%;
-                                                                    text-align: center;
-                                                                }
-                                                                #logo-footer {
-                                                                    width: 55%;
-                                                                    height: 65%;
-                                                                    margin-left: 7rem;
-                                                                }
-                                                                #liens-utiles-footer {
-                                                                    margin-right: 7rem;
-                                                                    text-align: center;
-                                                                }
-                                                                #link {
-                                                                    margin-right: 7rem;
-                                                                    text-align: center;
-                                                                }
-                                                                #contact-footer {
-                                                                    text-align: center;
-                                                                    margin-right: 2rem;
-                                                                }
-                                                                #icon-contact {
-                                                                    margin-left: 9rem;
-                                                                }
-                                                                #input-footer {
-                                                                    margin-right: 3rem;
-                                                                    margin-left: 3rem;
-                                                                }
-                                                                /*---------------------------------------------------------------End footer----------------------*/
-                                                            }

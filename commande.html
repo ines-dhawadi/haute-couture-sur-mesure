@@ -14,20 +14,29 @@
     <link rel="stylesheet" href="style2.css">
     <!---------------------------------------------font------------------------------------->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/images.jpg">
 </head>
 
 <body>
     <!--------------------------------------------------Navbar--------------------------------->
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="h-navbar">
         <a class="navbar-brand py-1" href="Acceuil.html">
-            <div><img id="logo" src="image/logo2.png" alt=""></div>
+            <img id="logo" src="image/2logo.webp" alt="">
         </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto  d-flex justify-content-between" id="hover-nav">
-                <li class="nav-item"><a class="nav-link " href="Acceuil.html">Acceuil</a></li>
+            <ul class="navbar-nav ml-auto  " id="hover-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Acceuil</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Acceuil.html">A propos</a>
+                        <a class="dropdown-item" href="qualité.html">Charte de qualité </a>
+
+                    </div>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Produits</a>
                     <div class="dropdown-menu">
@@ -39,7 +48,7 @@
                 <li class="nav-item"><a class="nav-link " href="commande.html">Commande personnalisée</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="panier.html"><img id="img-panier" src="image/add-to-cart.png" alt=""> Panier</a>
+                    <a class="nav-link " href="panier.html"><img src="image/add-to-cart.png" alt=""> Panier</a>
                 </li>
                 <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
             </ul>
