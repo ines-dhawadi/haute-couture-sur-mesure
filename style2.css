@@ -43,6 +43,11 @@
                                                                     .btn-outline-secondary {
                                                                         background-color: #a03276;
                                                                     }
+                                                                    nav {
+                                                                        background-color: black;
+                                                                        z-index: 3;
+                                                                        height: 12%;
+                                                                    }
                                                                     /*------------------------------------------------------*/
                                                                     /*-----------------------------------------------Apropos--------------------------------*/
                                                                     #imgapropos {
@@ -239,6 +244,10 @@
                                                                     }
                                                                     #icon-contact {
                                                                         margin-left: 5rem;
+                                                                    }
+                                                                    #icon-contact:hover {
+                                                                        background-color: #a03276;
+                                                                        border-radius: 35%;
                                                                     }
                                                                     #input-footer {
                                                                         margin-left: 1rem;

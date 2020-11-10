@@ -13,8 +13,8 @@
         overflow-y: scroll;
     }
     #logo {
-        width: 100px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
     #logo2 {
         margin-top: -45px;
@@ -24,13 +24,10 @@
     .navbar-nav .nav-item .nav-link {
         font-size: 20px;
         justify-content: space-between;
+        color: white;
     }
     .navbar-nav .nav-item .nav-link:hover {
         color: #a03276;
-    }
-    #img-panier {
-        width: 25px;
-        height: 25px;
     }
     #IMG {
         height: 400px;
@@ -38,6 +35,11 @@
     #IMG-contact {
         height: 400px;
         width: 100%;
+    }
+    nav {
+        background-color: black;
+        z-index: 3;
+        height: 70px;
     }
     /*-------------------------------------------head--------------------------------*/
     #img1 {
@@ -78,11 +80,11 @@
         position: absolute;
         margin-left: 25rem;
         padding: 1rem;
+        background-color: white;
     }
     .bg-apropos:hover {
-        height: 35%;
-        width: 60%;
-        background-color: white;
+        transform: scale(1.1);
+        transition: 2s;
     }
     #apropos {
         margin-top: 100px;
@@ -299,6 +301,17 @@
         margin-left: 2rem;
         margin-bottom: 2rem;
     }
+    #icon-contact:hover {
+        background-color: #a03276;
+        border-radius: 35%;
+    }
+    #copyright {
+        color: white;
+    }
+    #copyright:hover {
+        transform: scale(2.1);
+        transition: 2s;
+    }
     /*-----------------------------------------------------------------------------------------------*/
     /*---------------------------------------------***** V-q ****--------------------------------------------*/
     #card-shadow {
@@ -309,6 +322,11 @@
     }
     #card-image {
         height: 25rem;
+    }
+    #card-image:hover {
+        transform: scale(1.1);
+        transition: 2s;
+        box-shadow: 5px 5px 5px #888888;
     }
     .hover-card :hover {
         opacity: 0.5;
