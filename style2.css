@@ -48,6 +48,9 @@
                                                                         z-index: 3;
                                                                         height: 12%;
                                                                     }
+                                                                    .navbar-nav .nav-item .nav-link {
+                                                                        color: white;
+                                                                    }
                                                                     /*------------------------------------------------------*/
                                                                     /*-----------------------------------------------Apropos--------------------------------*/
                                                                     #imgapropos {
@@ -183,9 +186,35 @@
                                                                         width: 80%;
                                                                         margin-left: 2rem;
                                                                     }
+                                                                    #titre11 {
+                                                                        font-weight: bold;
+                                                                        font-family: 'Great Vibes', cursive;
+                                                                        font-size: 20px;
+                                                                        margin-left: 60%;
+                                                                        margin-top: 20%;
+                                                                    }
+                                                                    #titre11:hover {
+                                                                        color: #a03276;
+                                                                    }
+                                                                    #img11 {
+                                                                        margin-left: 5%;
+                                                                        width: 45%;
+                                                                        height: 45%;
+                                                                        margin-top: -40%;
+                                                                    }
+                                                                    .input-contact {
+                                                                        width: 40%;
+                                                                        margin-left: 60%;
+                                                                        margin-top: 5%;
+                                                                    }
+                                                                    s
                                                                     /*-------------------------------------------------------Vetement-O-----------------------------------------*/
                                                                     #card-V-O {
                                                                         margin-left: 6rem;
+                                                                    }
+                                                                    #img-couleur {
+                                                                        width: 20%;
+                                                                        height: 5rem;
                                                                     }
                                                                     /*----------------------------------------------------------Panier-------------------------------------------*/
                                                                     #table-panier {
@@ -217,6 +246,12 @@
                                                                     }
                                                                     footer {
                                                                         align-items: center;
+                                                                    }
+                                                                    #none {
+                                                                        display: none;
+                                                                    }
+                                                                    #aparimg {
+                                                                        margin-left: 4rem;
                                                                     }
                                                                     /*----------------------------------------------------------End commande--------------------------------*/
                                                                     /*------------------------------------------------------------------------footer----------------------------------------------*/
